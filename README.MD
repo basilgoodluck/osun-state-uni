@@ -1,3 +1,7 @@
 # OSUN STATE UNIVERSITY
-This project is all about Osun State University particularly the computer science department. This project is originally not mine, it belongs to the 200 level (2020) computer science students {@daveworld on github}.
-I made it for practice purpose. #HAVEFUN
+This project is a web app for Osun State University (Computer Science Students)
+## Not originally mine
+My mentor @daveworld on github is the original owner.
+I worked on this for practice purpose.
+## Live Version
+Click on the link in the description to see it live.
