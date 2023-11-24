@@ -6,13 +6,14 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 .home{
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/assets/images/admin.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow: hidden;
 }
 .home .header{
     display: flex;
