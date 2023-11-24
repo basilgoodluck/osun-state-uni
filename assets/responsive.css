@@ -29,6 +29,7 @@
         top: 50%;
         transform: translateY(-50%);
         right: 20px;
+        cursor: pointer;
     }.home .header .fa-times{
         display: none;
         z-index: 2333;
@@ -57,11 +58,11 @@
     .home .header .navMenu.showmenu .fa-times{
         display: block;
         z-index: 2523252;
-        top: 10%;
+        top: 50px;
     }
     .home .header .navMenu p{
         font-size: 12px;
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .home .header .navMenu p::before{
         display: none;
