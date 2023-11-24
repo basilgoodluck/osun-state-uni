@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .home{
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/assets/images/admin.jpg");
