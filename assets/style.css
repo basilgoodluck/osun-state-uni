@@ -100,10 +100,8 @@ body{
 .home .textContent p{
     font-size: 14px;
     font-weight: 500;
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
-    word-break: break-all;
-    word-wrap: break-word;
 }
 .home .textContent a{
     display: inline-block;
