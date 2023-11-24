@@ -29,7 +29,11 @@
         top: 50%;
         transform: translateY(-50%);
         right: 20px;
+    }.home .header .fa-times{
+        display: none;
+        z-index: 2333;
     }
+
     .home .header .logo{
         width: 150px;
     }
@@ -38,9 +42,9 @@
         background-color: green;
         position: absolute;
         height: 100vh;
-        width: 200px;
+        width: 250px;
         top: 0;
-        right: -200px;
+        right: -250px;
         flex-direction: column;
         display: flex;
         justify-content: initial;
@@ -49,6 +53,11 @@
     }
     .home .header .navMenu.showmenu{
         right: 0;
+    }
+    .home .header .navMenu.showmenu .fa-times{
+        display: block;
+        z-index: 2523252;
+        top: 10%;
     }
     .home .header .navMenu p{
         font-size: 12px;

@@ -18,3 +18,7 @@ const show = function(){
     navMenu.classList.toggle("showmenu")
 
 }
+const exit = function(){
+    navMenu.classList.remove("showmenu")
+
+}
