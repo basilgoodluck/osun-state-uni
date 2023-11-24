@@ -20,6 +20,10 @@ body{
     align-items: center;
     flex-wrap: wrap;
     padding: 2.5% 5%;
+    position: relative;
+}
+.home .header .fa{
+    display: none;
 }
 .home .header .logo{
     width: 200px;
@@ -34,24 +38,50 @@ body{
     flex-basis: 50%;
     flex-wrap: wrap;
 }
-.home .header .navMenu p{
+:root{
+    --bgcolor: #ff0;
+    --opaq: 0;
+    --changeDir: 0%;
+}
+
+.gray{
     display: inline-block;
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
     padding-bottom: 7px;
+    transition: .8s ease;
+    overflow: hidden;
 }
-.home .header .navMenu p::before{
+.gray::before{
     content: "";
     width: 35%;
     position: absolute;
     bottom: 0;
+    left: var(--changeDir);
     border-radius: 3px;
     height: 7px;
-    background-color: #ff0;
+    opacity: var(--opaq);
+    background-color: var(--bgcolor);
+    transition: .8s ease;
 }
 .home .header .navMenu a{
     color: #fff;
     text-decoration: none;
+    transition: .78s ease;
+}
+.home .header .navMenu a:hover{
+    color: green;
+}
+#undernav{
+    position: absolute;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    background-color: blue;
+    display: block;
+    transition: 1s ease-in-out;
+    border-radius: 10px;
 }
 .home .textContent{
     padding: 2.5% 5%;
@@ -62,7 +92,9 @@ body{
     margin-top: 50px;
 }
 .home .textContent h1{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
 }
 .home .textContent p{
     font-size: 14px;
@@ -188,15 +220,39 @@ body{
     font-size: 1.5em;
     color: green;
     position: absolute;
-    top: 60%;
+    bottom: 0%;
     opacity: 0;
     left: 5%;
-    right: 5%; 
+    right: 5%;
+    color: #fff; 
+    transition: .8s ease;
 }
 .campus-info > p{
     font-size: 14px;
     font-weight: 500;
     margin: 40px auto 0;
+}
+.campus{
+    position: relative;
+    border-radius: 20px;
+}
+.campus .yellow-layer{
+    background-color: #ff09;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: none;
+    transition: .7s ease;
+}
+.campus:hover .yellow-layer{
+    display: block;
+}
+.campus:hover h1{
+    opacity: .8;
+    bottom: 150px;
 }
 .facilities-info{
     text-align: center;
@@ -330,7 +386,7 @@ body{
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    padding: 6% 0 40px 0;
+    padding: 6% 10px 40px;
     border-radius: 20px;
 }
 .study-info h1{
@@ -360,7 +416,7 @@ body{
     margin: 0 auto;
 }
 .about-hod{
-    padding: 5% 0  ;
+    padding: 5% 0;
     text-align: center;
 }
 .about-hod > h1{ 
@@ -376,7 +432,7 @@ body{
 .hod-info{
     background-color: green;
     width: 80%;
-    padding: 3% 0;
+    padding: 3% 10px;
     border-radius: 20px;
     margin: 0 auto;
     color: #fff;
@@ -387,6 +443,7 @@ body{
     color: #ff0;
 }
 .lecturers-section{
+    padding-top: 20px;
     text-align: center;
 }
 .lecturers-section > h1{
