@@ -153,7 +153,11 @@ body{
     box-sizing: border-box;
     padding: 5% 5% 10%;
     display: grid;
+    transition: 1s ease;
     gap: 20px;
+}
+.course-list .course:hover{
+    box-shadow: 0 0 15px yellow;
 }
 .course-list .course h1{
     font-size: 1rem;
